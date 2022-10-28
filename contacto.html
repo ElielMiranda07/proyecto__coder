@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Filomena</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+    </style>
+    <link rel="shortcut icon" href="./Mulimedia/logoWeb.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body">
+    <header>
+        <div>
+            <h1 class="header__h1">
+                <a href="./index.html">La Filomena</a>
+            </h1>
+        </div>
+        <div>
+            <nav class="nav__bar">
+                <ul class="nav__ul">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./sobreNosotros.html" class="nav__ul__li">Sobre Nosotros</a></li>
+                    <li><a href="./dia.html" class="nav__ul__li">Día</a></li>
+                    <li><a href="./noche.html" class="nav__ul__li">Noche</a></li>
+                    <li hidden><a href="./contacto.html" class="nav__ul__li">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+    <main>
+        <div class="div__h2">
+            <h2>
+                Llena el formulario y te contactamos
+            </h2>
+        </div>
+        <form action="">
+            <fieldset>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Tu Nombre">
+                </div>
+                <div>
+                    <label for="nombre">Apellido</label>
+                    <input type="text" id="nombre" placeholder="tu apellido">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Tu e-mail" required>
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" placeholder="Tu Telefono" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" placeholder="Escribí acá tu mensaje"></textarea>
+                </div>
+                <span>
+                    <code>
+                        <button class="button" type="submit">Enviar</button>
+                    </code>
+                </span>
+            </fieldset>
+    </main>
+    <footer>
+        <div>
+            <a href="https://instagram.com/lafilomenachivilcoy?igshid=YmMyMTA2M2Y=" target="_blank"><img class="logos" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="" srcset=""></a>
+        </div>
+        <div>
+            <p>¡Seguinos en nuestras redes!</p>
+        </div>
+        <div>
+            <a href="https://es-la.facebook.com/lafilomenasalon/" target="_blank"><img class="logos" src="./Mulimedia/facebook-logo-0.png" alt=""></a>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

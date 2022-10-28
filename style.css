@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    font-family: 'PT Sans', sans-serif;
+}
+
+header{
+   grid-area: header;
+   background-color: #f6e27f;
+   height: 120px;
+   border: 3px solid #c11616;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__savage__div{
+    width: 150px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.header__savage__h1{
+    color: #39ff14;
+    text-shadow: 0 0 10px #000000;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 85%;
+    margin: 2px;
+    font-weight: 900;
+    color: #c11616;
+}
+
+header div{
+    padding: 5px;
+}
+
+header li{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+    border: 1px solid #c11616;
+    border-radius: 4px;
+}
+
+.header__savage{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 18%, rgba(57,255,20,1) 100%);
+    border: 3px solid #000000;
+}
+
+.header__savage__a{
+    color: #000000
+}
+
+.header__savage__li{
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.nav__ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(255,241,172);
+    background: linear-gradient(180deg, rgba(255,241,172,1) 0%, rgba(255,250,224,1) 12%, rgba(246,226,127,1) 48%, rgba(246,226,127,1) 52%, rgba(255,250,224,1) 88%, rgba(255,241,172,1) 100%);
+}
+
+.main__savage{
+    background: #000000;
+    border: 3px solid #39ff14;
+}
+
+main div{
+    margin: 5px 10px 5px 10px;
+}
+
+.div__h2{
+    color: #3c5a14;
+    font-size: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.div__h2__savage{
+    color: #39ff14;
+    font-size: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-shadow: 0 0 5px #39ff14;
+}
+
+.div2__h2__savage{
+    font-size: 150%;
+    text-shadow: 0 0 40px #000000;
+}
+
+.div2__h2__savage a{
+    color: #39ff14;
+    text-decoration: none;
+}
+
+main p{
+    font-weight: 900;
+    font-size: 85%;
+    color: #3c5a14;
+    text-align: center;
+}
+
+.main__savage p{
+    color: #39ff14;
+}
+
+.imagen{
+    width: 100%;
+    height: auto;
+}
+
+.maps{
+    height: 300px;
+    width: auto;
+}
+
+fieldset{
+    margin: 10px 5px 10px 5px;
+    background-image: url("./Mulimedia/contacto.jpg");
+    background-size: contain;
+    height: auto;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset label{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 900;
+    color: #3c5a14;
+    font-size: 90%;
+}
+
+fieldset input{
+    width: 110px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 900;
+    font-size: 60%;
+}
+
+fieldset textarea{
+    height: 50px;
+    width: 110px;
+    font-family: 'PT Sans' , sans-serif;
+    font-weight: 900;
+    font-size: 60%;
+    overflow: scroll;
+    resize: none;
+}
+
+fieldset div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+fieldset span{
+    display: flex;
+    justify-content: center;
+    margin: 5px 7px 5px 7px;
+}
+
+.button{
+    grid-area: button;
+}
+
+button{
+    background-color: #eee;
+    border: none;
+    margin-bottom: 5px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 90%;
+    font-weight: 900;
+    height: 40px;
+    width: 80px;
+    border-radius: 2rem;
+    color: #3c5a14;
+    box-shadow: 0 0.4rem #273a0d;
+    cursor: pointer;
+}
+   
+button:active{
+    color: white;
+    box-shadow: 0 0.2rem #273a0d;
+    transform: translateY(0.2rem);
+}
+   
+button:hover:not(:disabled){
+    background: #3c5a14;
+    color: white;
+    text-shadow: 0 0.1rem #273a0d;
+}
+   
+button:disabled{
+    cursor: auto;
+    color: grey;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #f6e27f;
+    height: 11vh;
+    border: 3px solid #c11616;
+    font-size: 85%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+}
+
+.footer__savage{
+    background-color: #000000;
+    border: 3px solid #39ff14;
+}
+
+footer div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer p{
+    font-weight: 900;
+    color: #c11616;
+    font-size: smaller;
+    text-align: center;
+}
+
+.footer__savage__p{
+    color: #39ff14;
+}
+
+.logos{
+    width: 40px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media screen and (min-width: 576px) {
+    header{
+        height: 100px;
+    }
+    .header__h1{
+        font-size: 250%;
+        margin-left: 20px;
+    }
+    .nav__ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .header__savage__h1{
+        font-size: 130%;
+    }
+    main div{
+        margin: 10px 20px 10px 20px;
+    }
+    main p{
+        font-size: 100%;
+    }
+    .div__h2{
+        font-size: 110%;
+    }
+    .div__h2__savage{
+        font-size: 110%;
+    }
+    .div2__h2__savage{
+        font-size: 200%;
+    }
+    fieldset{
+        width: 550px;
+    }
+    fieldset div{
+        justify-content: space-evenly;
+    }
+    footer p{
+        font-size: 140%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__h1{
+        font-size: 290%;
+    }
+    header li{
+        border: 2px solid #c11616;
+    }
+    header li a{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .nav__ul li{
+        font-size: 120%;
+    }
+    .header__savage__li{
+        border: 2px solid #000000;
+    }
+    main div{
+        margin: 15px 30px 15px 30px;
+    }
+    .div2__h2__savage{
+        font-size: 260%;
+    }
+    main p{
+        font-size: 120%;
+    }
+    fieldset{
+        width: 650px;
+        height: 500px;
+    }
+    footer{
+        height: 13vh;
+    }
+    footer p{
+        font-size: 170%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header{
+        position: sticky;
+        top: 0px;
+        bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header{
+        height: 120px;
+    }
+    .div2__h2__savage{
+        position: sticky;
+        top: 15px;
+        z-index: 2;
+    }
+}
