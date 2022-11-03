@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -43,7 +45,7 @@ header a{
 }
 
 header div{
-    padding: 5px;
+    margin: 8px
 }
 
 header li{
@@ -56,8 +58,10 @@ header li{
 
 .header__savage{
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 18%, rgba(57,255,20,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(57,255,20,1) 100%);
     border: 3px solid #000000;
+    display: flex;
+    justify-content: right;
 }
 
 .header__savage__a{
@@ -76,6 +80,10 @@ header li{
     align-items: center;
 }
 
+.nav__savage{
+    margin: 30px;
+}
+
 main{
     grid-area: main;
     display: flex;
@@ -90,13 +98,20 @@ main{
     border: 3px solid #39ff14;
 }
 
-main div{
+main article{
+    margin: 5px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+main section{
     margin: 5px 10px 5px 10px;
 }
 
-.div__h2{
+main h2{
     color: #3c5a14;
-    font-size: 80%;
+    font-size: 120%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -106,28 +121,28 @@ main div{
 
 .div__h2__savage{
     color: #39ff14;
-    font-size: 80%;
+    font-weight: 800;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    text-shadow: 0 0 5px #39ff14;
 }
 
-.div2__h2__savage{
+.article__h2__savage{
     font-size: 150%;
     text-shadow: 0 0 40px #000000;
 }
 
-.div2__h2__savage a{
+.article__h2__savage a{
     color: #39ff14;
     text-decoration: none;
 }
 
 main p{
     font-weight: 900;
-    font-size: 85%;
+    padding: 5px;
+    font-size: 75%;
     color: #3c5a14;
     text-align: center;
 }
@@ -137,95 +152,58 @@ main p{
 }
 
 .imagen{
-    width: 100%;
+    width: 70%;
     height: auto;
+    padding: 5px;
 }
 
 .maps{
-    height: 300px;
+    height: 250px;
     width: auto;
 }
 
-fieldset{
-    margin: 10px 5px 10px 5px;
-    background-image: url("./Mulimedia/contacto.jpg");
-    background-size: contain;
-    height: auto;
-    width: 260px;
-    display: flex;
-    flex-direction: column;
-}
-
-fieldset label{
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 900;
+.form{
+    font-weight: 800;
     color: #3c5a14;
-    font-size: 90%;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #3c5a14;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #3c5a14;
+    overflow: hidden;
+    background-color: #fff0a6;
 }
 
-fieldset input{
-    width: 110px;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 900;
-    font-size: 60%;
+section label, section input, section textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #3c5a14;
 }
 
-fieldset textarea{
-    height: 50px;
-    width: 110px;
-    font-family: 'PT Sans' , sans-serif;
-    font-weight: 900;
-    font-size: 60%;
-    overflow: scroll;
-    resize: none;
-}
-
-fieldset div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-fieldset span{
-    display: flex;
-    justify-content: center;
-    margin: 5px 7px 5px 7px;
-}
-
-.button{
-    grid-area: button;
-}
-
-button{
-    background-color: #eee;
+section input:not([type="submit"]), section textarea{
+    background-color: #f6e27f;
     border: none;
-    margin-bottom: 5px;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 90%;
-    font-weight: 900;
-    height: 40px;
-    width: 80px;
-    border-radius: 2rem;
+    border-radius: 10px;
+    border-bottom: 2px solid #3c5a14;
+    outline: none;
+}
+
+section textarea{
+    min-height: 100px;
+}
+
+section input[type="submit"]{
+    border: none;
     color: #3c5a14;
-    box-shadow: 0 0.4rem #273a0d;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: #f6e27f;
+    border-bottom: 2px solid #3c5a14;
+    border-radius: 10px;
     cursor: pointer;
-}
-   
-button:active{
-    color: white;
-    box-shadow: 0 0.2rem #273a0d;
-    transform: translateY(0.2rem);
-}
-   
-button:hover:not(:disabled){
-    background: #3c5a14;
-    color: white;
-    text-shadow: 0 0.1rem #273a0d;
-}
-   
-button:disabled{
-    cursor: auto;
-    color: grey;
 }
 
 footer{
@@ -289,13 +267,13 @@ footer p{
     main p{
         font-size: 100%;
     }
-    .div__h2{
+    .article__h2{
         font-size: 110%;
     }
     .div__h2__savage{
         font-size: 110%;
     }
-    .div2__h2__savage{
+    .article__h2__savage{
         font-size: 200%;
     }
     fieldset{
@@ -329,7 +307,7 @@ footer p{
     main div{
         margin: 15px 30px 15px 30px;
     }
-    .div2__h2__savage{
+    .article__h2__savage{
         font-size: 260%;
     }
     main p{
@@ -359,7 +337,7 @@ footer p{
     header{
         height: 120px;
     }
-    .div2__h2__savage{
+    .article__h2__savage{
         position: sticky;
         top: 15px;
         z-index: 2;

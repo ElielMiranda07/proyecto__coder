@@ -10,21 +10,14 @@
     </style>
     <link rel="shortcut icon" href="./Mulimedia/logoWeb.jpg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body class="body">
     <header class="header__savage">
-        <div class="header__savage__div">
-            <div>
-                <h1>
-                    <a class="header__savage__h1" href="./noche.html">Savage</a>
-                </h1>
-            </div>
-        </div>
         <div>
-            <nav>
+            <nav class="nav__savage">
                 <ul class="nav__ul">
-                    <li class="header__savage__li"><a class="header__savage__a" href="./index.html">Inicio</a></li>
+                    <li class="header__savage__li"><a class="header__savage__a" href="../index.html">Inicio</a></li>
                     <li class="header__savage__li"><a class="header__savage__a" href="./sobreNosotros.html">Sobre Nosotros</a></li>
                     <li class="header__savage__li"><a class="header__savage__a" href="./dia.html">Día</a></li>
                     <li hidden><a href="./noche.html">Noche</a></li>
@@ -35,25 +28,27 @@
     </header>
     <main class="main__savage">
         <div class="div__h2__savage">
-            <h2>
+            <h2 class="div__h2__savage">
                 La noche en La Filomena es
             </h2>
         </div>
-        <div class="div2__h2__savage">
-            <h2><a href="./noche.html">Savage</a></h2>
-        </div>
-        <div>
-            <img class="imagen" src="./Mulimedia/noche1.jpg" alt="De noche">
-        </div>
-        <div>    
+        <article class="article__h2__savage">
+            <h2 data-aos="zoom-in-down"data-aos-duration="1500"><a href="./noche.html">Savage</a></h2>
+        </article>
+        <article>
             <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt omnis porro esse quisquam, soluta aliquid nisi officiis magni mollitia quasi tempora facere iure fugiat nam earum perspiciatis distinctio! Architecto?
             Quaerat excepturi veritatis magni
             </p>
-        </div>
-        <div>
-            <img class="imagen" src="./Mulimedia/noche2.jpg" alt="De noche">
-        </div>
+            <img class="imagen" src="../media/noche1.jpg" alt="De noche">    
+        </article>
+        <article>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt omnis porro esse quisquam, soluta aliquid nisi officiis magni mollitia quasi tempora facere iure fugiat nam earum perspiciatis distinctio! Architecto?
+            Quaerat excepturi veritatis magni
+            </p>
+            <img class="imagen" src="../media/noche2.jpg" alt="De noche">
+        </article>
     </main>
     <footer class="footer__savage">
         <div>
@@ -63,9 +58,10 @@
             <p class="footer__savage__p">¡Seguinos en nuestras redes!</p>
         </div>
         <div>
-            <a href="https://es-la.facebook.com/lafilomenasalon/" target="_blank"><img class="logos" src="./Mulimedia/facebook-logo-0.png" alt=""></a>
+            <a href="https://es-la.facebook.com/lafilomenasalon/" target="_blank"><img class="logos" src="../media/facebook-logo-0.png" alt=""></a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
