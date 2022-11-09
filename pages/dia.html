@@ -5,59 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Filomena</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-    </style>
     <link rel="shortcut icon" href="./Mulimedia/logoWeb.jpg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
 </head>
-<body class="body">
+<body>
     <header>
-        <div>
-            <h1 class="header__h1">
-                <a href="../index.html">La Filomena</a>
-            </h1>
-        </div>
-        <div>
-            <nav>
-                <ul class="nav__ul">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
-                    <li hidden><a href="./dia.html">Día</a></li>
-                    <li><a href="./noche.html">Noche</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>    
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">La Filomena</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="./sobreNosotros.html">Sobre Nosotros</a>
+                        <a hidden class="nav-link" href="./dia.html">Día</a>
+                        <a class="nav-link" href="./noche.html">Noche</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav> 
     </header>
     <main>
         <div>
-            <h2>
+            <h1 data-aos="zoom-in-down"data-aos-duration="1500">
                 De día en La Filomena
-            </h2>
+            </h1>
         </div>
-        <article>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt omnis porro esse quisquam, soluta aliquid nisi officiis magni mollitia quasi tempora facere iure fugiat nam earum perspiciatis distinctio! Architecto?
-            Quaerat excepturi veritatis magni
-            </p>
-            <img class="imagen" src="../media/dia1.jpg" alt="De día">
-        </article>
-        <article>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt omnis porro esse quisquam, soluta aliquid nisi officiis magni mollitia quasi tempora facere iure fugiat nam earum perspiciatis distinctio! Architecto?
-            Quaerat excepturi veritatis magni
-            </p>
-            <img class="imagen" src="../media/dia2.jpg" alt="De día">
-        </article>
-        <article>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt omnis porro esse quisquam, soluta aliquid nisi officiis magni mollitia quasi tempora facere iure fugiat nam earum perspiciatis distinctio! Architecto?
-            Quaerat excepturi veritatis magni
-            </p>
-            <img class="imagen" src="../media/dia3.jpg" alt="De día">
-        </article>
+        <section class="row container-sm text-center justify-content-center">
+            <article class="col-sm-12 col-md-6">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt omnis porro esse quisquam, soluta aliquid nisi officiis magni mollitia quasi tempora facere iure fugiat nam earum perspiciatis distinctio! Architecto? Quaerat excepturi veritatis magni  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus adipisci nesciunt nihil neque commodi earum vitae error ut temporibus dolorum maiores, ipsum voluptatem natus omnis quam dignissimos aspernatur consequuntur fugit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt consectetur, ex dolorem sapiente numquam tenetur veritatis fugiat nisi labore? Totam expedita nulla maxime numquam alias nihil sapiente corrupti quo consectetur!
+                </p>
+                <img class="imagen3" src="../media/dia1.jpg" alt="De día">
+            </article>
+            <article class="col-sm-12 col-md-6">
+                <img class="imagen3" src="../media/dia2.jpg" alt="De día">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt omnis porro esse quisquam, soluta aliquid nisi officiis magni mollitia quasi tempora facere iure fugiat nam earum perspiciatis distinctio! Architecto? Quaerat excepturi veritatis magni Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum non hic fugiat ducimus quasi aliquam quisquam laudantium, doloremque aliquid dolor illum quibusdam numquam, molestias impedit est beatae saepe laborum eaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam labore delectus eum expedita nesciunt nostrum optio ipsam ut sapiente quidem, dolorem obcaecati distinctio. Quos, adipisci! Voluptatibus hic aut consequatur.
+                </p>
+            </article>
+            <article class="col-sm-12 col-md-6">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt omnis porro esse quisquam, soluta aliquid nisi officiis magni mollitia quasi tempora facere iure fugiat nam earum perspiciatis distinctio! Architecto? Quaerat excepturi veritatis magni Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit ratione possimus temporibus ea eos omnis, neque consequatur architecto nostrum iure aperiam minus aliquid, sapiente nisi officiis beatae. Assumenda, tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestiae iure, debitis ex maxime ut, nulla laborum sapiente eaque eum minus reprehenderit esse. Natus delectus blanditiis labore vel, rerum nulla.
+                </p>
+                <img class="imagen3" src="../media/dia3.jpg" alt="De día">
+            </article>
+        </section>
     </main>
     <footer>
         <div>
@@ -74,5 +72,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
