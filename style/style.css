@@ -59,13 +59,12 @@ main h1{
 main p{
     font-size: 85%;
     color: #223127;
+    margin-top: 10px;
 }
 
-#div__carrusel{
+#section__carrusel{
     margin-top: 10px;
     margin-bottom: 10px;
-    display: flex;
-    align-items: center;
 }
 
 .imagen{
@@ -208,6 +207,11 @@ footer p{
     }
     nav{
         border-bottom: 3px solid #f1f1f1;
+    }
+    #section__carrusel{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .imagen{
         height: 340px;
